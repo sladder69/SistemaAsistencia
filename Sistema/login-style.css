@@ -1,0 +1,248 @@
+/* Variables para los colores del sistema */
+:root {
+    --color-azul: #004d99;
+    --color-verde: #4CAF50;
+    --color-dorado: #FFD700;
+    --color-fondo-claro: #f4f4f9;
+    --color-texto-claro: white;
+    --color-gris-claro: #e9ecef;
+    --color-gris-medio: #adb5bd;
+    --color-gris-oscuro: #495057;
+    --color-rojo: #dc3545;
+    --color-rojo-claro: #f8d7da;
+}
+
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--color-azul) 0%, #00264d 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contenedor-login {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tarjeta de login */
+.tarjeta-login {
+    background-color: var(--color-fondo-claro);
+    border-radius: 10px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid var(--color-dorado);
+    width: 100%;
+}
+
+/* Cabecera del login */
+.cabecera-login {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logos-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.logo-sep, .logo-tecnm {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 8px 15px;
+    background-color: var(--color-azul);
+    color: var(--color-texto-claro);
+    border-radius: 5px;
+    border: 2px solid var(--color-dorado);
+}
+
+.cabecera-login h1 {
+    color: var(--color-azul);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.cabecera-login p {
+    color: var(--color-gris-oscuro);
+    font-size: 0.95em;
+}
+
+/* Mensajes de error y éxito */
+.mensaje-error {
+    background-color: var(--color-rojo-claro);
+    color: var(--color-rojo);
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--color-rojo);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+.mensaje-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--color-verde);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9em;
+}
+
+/* Formulario */
+.formulario-login {
+    margin-bottom: 25px;
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-azul);
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95em;
+}
+
+.grupo-input label i {
+    color: var(--color-azul);
+    width: 16px;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--color-gris-claro);
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s;
+    background-color: white;
+}
+
+.grupo-input input:focus {
+    outline: none;
+    border-color: var(--color-azul);
+    box-shadow: 0 0 0 3px rgba(0, 77, 153, 0.1);
+}
+
+/* Botón de ingresar */
+.boton-ingresar {
+    width: 100%;
+    background-color: var(--color-verde);
+    color: var(--color-texto-claro);
+    border: none;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.boton-ingresar:hover {
+    background-color: #388E3C;
+}
+
+.boton-ingresar:active {
+    transform: translateY(1px);
+}
+
+/* Enlaces adicionales */
+.enlaces-login {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.enlace {
+    color: var(--color-azul);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.enlace:hover {
+    color: var(--color-verde);
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.pie-login {
+    margin-top: 30px;
+    text-align: center;
+    color: var(--color-texto-claro);
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+/* Efectos responsivos */
+@media (max-width: 480px) {
+    .tarjeta-login {
+        padding: 30px 20px;
+    }
+    
+    .cabecera-login h1 {
+        font-size: 1.5em;
+    }
+    
+    .enlaces-login {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .logos-login {
+        gap: 10px;
+    }
+    
+    .logo-sep, .logo-tecnm {
+        font-size: 1.2em;
+        padding: 6px 12px;
+    }
+}
+
+/* Animación sutil al cargar */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tarjeta-login {
+    animation: fadeIn 0.5s ease-out;
+}

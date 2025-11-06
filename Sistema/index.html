@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Asistencias - SEP TECNM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+
+        <header class="cabecera">
+            <div class="logos">
+                <div class="logo-sep">SEP</div>
+                <div class="logo-tecnm">TECNM</div>
+            </div>
+            <div class="titulo-sistema">
+                <h1>Sistema de Asistencias</h1>
+            </div>
+            <div class="perfil">
+                <div class="icono-perfil">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="credenciales">
+                    <div class="usuario-info">
+                        <span class="nombre-usuario">Usuario</span>
+                        <span class="rol-usuario">Rol</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="cuerpo">
+            
+            <nav class="menu-lateral">
+                <div class="menu-header">
+                    <h3>Menú Principal</h3>
+                </div>
+                <ul class="lista-opciones">
+                    <li class="opcion activo">
+                        <a href="index.html">
+                            <i class="fas fa-home"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="/paginas/estudiantes.html">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Estudiantes</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="/paginas/grupos.html">
+                            <i class="fas fa-users"></i>
+                            <span>Grupos</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="/paginas/asistencias.html">
+                            <i class="fas fa-clipboard-check"></i>
+                            <span>Asistencias</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="/paginas/materia.html">
+                            <i class="fas fa-book"></i>
+                            <span>Materias</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="/paginas/profesores.html">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Profesores</span>
+                        </a>
+                    </li>
+                    <li class="opcion">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="contenido-principal">
+                <div class="seccion-superior">
+                    <h2 class="titulo-seccion">Panel de Control</h2>
+                    <div class="logo-area">
+                        <i class="fas fa-school"></i>
+                    </div>
+                </div>
+                
+                <div class="tarjetas-dashboard">
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="tarjeta-contenido">
+                            <h3>Asistencias</h3>
+                            <p class="tarjeta-valor">--%</p>
+                            <p class="tarjeta-descripcion">-- de -- estudiantes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <i class="fas fa-user-times"></i>
+                        </div>
+                        <div class="tarjeta-contenido">
+                            <h3>Inasistencias</h3>
+                            <p class="tarjeta-valor">--</p>
+                            <p class="tarjeta-descripcion">Estudiantes ausentes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tarjeta">
+                        <div class="tarjeta-icono">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="tarjeta-contenido">
+                            <h3>Retardos</h3>
+                            <p class="tarjeta-valor">--</p>
+                            <p class="tarjeta-descripcion">Estudiantes con retardo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seccion-inferior">
+                    <div class="tarjeta-info">
+                        <h3>Información del Sistema</h3>
+                        <p>Bienvenido al sistema de gestión de asistencias.</p>
+                        <p>Seleccione una opción del menú para comenzar.</p>
+                    </div>
+                </div>
+                
+                <button class="boton-cerrar-sesion">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Cerrar Sesión
+                </button>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+</html>
